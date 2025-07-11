@@ -3,9 +3,6 @@ const ico_sun = document.getElementById("ico_sun");
 const ico_moon = document.getElementById("ico_moon");
 
 function updateTheme(isDark) {
-  document.body.classList.toggle("dark_mode", isDark);
-  ico_sun.style.display = isDark ? "block" : "none";
-  ico_moon.style.display = isDark ? "none" : "block";
   toggler_mode.checked = isDark;
   localStorage.setItem("theme", isDark ? "dark" : "light");
 }
